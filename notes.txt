@@ -1,0 +1,14 @@
+sudo docker run -p 3000:3000 -it -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=unix$DISPLAY spyder
+
+sudo docker run -p 8787:8787 -e DISABLE_AUTH=true rocker/rstudio
+
+needs to run xhost +local:root
+
+sudo docker run -p 10000:10000 -it -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=unix$DISPLAY -v /dev/vboxdrv:/dev/vboxdrv --privileged sas
+
+sudo docker run -p 8888:8888 -it -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=unix$DISPLAY jupyter
+
+sudo docker run -p 8888:8888 -it -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=unix$DISPLAY orange
+******** Use this as a base**********
+
+wine /root/.wine/drive_c/'Program Files'/Tableau/'Tableau 2020.3'/bin/tableau.exe

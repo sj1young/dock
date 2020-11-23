@@ -1,0 +1,5 @@
+FROM ubuntu
+
+USER root
+=
+CMD "echo "did it""
